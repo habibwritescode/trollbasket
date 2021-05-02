@@ -4,11 +4,189 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
   <title>Trollbasket</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <div class="wrapper">
+    <header class="header">
+      <div class="flex header__flex">
+        <div class="time">
+          <span class="time__hours"></span>
+          <span class="time__colon">:</span>
+          <span class="time__minutes"></span>
+        </div>
+    
+        <div class="header__icons">
+          <img src="./icons/network-bar.svg" alt="">
+          <img src="./icons/wifi.svg" alt="">
+          <img src="./icons/battery.svg" alt="">
+        </div>
+      </div>
+    
+      <h1 class="header__title">Trollbasket</h1>
+    </header>
+
+    <nav class="secondary-nav">
+      <ul class="secondary-nav__list">
+        <li class="secondary-nav__list-item secondary-nav__list-item-location">
+          <div class="secondary-nav__icon-container">
+            <img src="./icons/map-marker.svg" alt="">
+          </div>
+          <span class="secondary-nav__list-item-location-text">
+            Lagos
+          </span>
+          <img src="./icons/arrow-down.svg" alt="">
+        </li>
   
+        <li class="secondary-nav__list-item secondary-nav__list-item-orders">
+          <div class="secondary-nav__icon-container">
+            <img src="./icons/package.svg" alt="">
+          </div>
+          <span class="secondary-nav__list-item-orders-text">
+            My Orders
+          </span>
+        </li>
+
+        <li class="secondary-nav__list-item secondary-nav__list-item-cart">
+          <div class="secondary-nav__icon-container">
+            <img src="./icons/cart.svg" alt="">
+            <span class="secondary-nav__cart-total">9</span>
+          </div>
+          <span class="secondary-nav__list-item-cart-text">
+            Cart
+          </span>
+        </li>
+      </ul>
+    </nav>
+
+    <form class="search-form">
+      <input class="search-form__input" type="search" placeholder="Search merchbuy">
+      <img class="search-form__search-icon" src="./icons/search.svg" alt="">
+    </form>
+  
+    <main>
+      <div class="carousel">
+        <div class="carousel-inner flex">
+          <div class="banner banner--sky-blue">
+            <p class="banner__text">Need to update your shipping <span class="banner__text--deep-blue">address</span>?</p>
+            <button class="banner__btn banner__btn--deep-blue">Go Here</button>
+          </div>
+          
+          <div class="banner banner--deep-blue">
+            <p class="banner__text">Having any <span class="banner__text--orange">issues</span> with your order?</p>
+            <button class="banner__btn banner__btn--sky-blue">Contact Us</button>
+          </div>
+          
+          <div class="banner banner--orange">
+            <p class="banner__text">Want to <span class="banner__text--deep-blue">track</span> your shipment?</p>
+            <button class="banner__btn banner__btn--deep-blue">Check Here</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="features grid">
+        <div class="features__item">
+          <div class="features__icon-container features__icon-container--blue">
+            <img src="./icons/document.svg" alt="">
+          </div>
+          <p>Product categories</p>
+        </div>
+        
+        <div class="features__item">
+          <div class="features__icon-container features__icon-container--orange">
+            <img src="./icons/fire.svg" alt="">
+          </div>
+          <p>Popular Products</p>
+        </div>
+        
+        <div class="features__item">
+          <div class="features__icon-container features__icon-container--purple">
+            <img src="./icons/like.svg" alt="">
+          </div>
+          <p>Recommended Products</p>
+        </div>
+        
+        <div class="features__item">
+          <div class="features__icon-container features__icon-container--green">
+            <img src="./icons/shop.svg" alt="">
+          </div>
+          <p>Shops</p>
+        </div>
+      </div>
+
+      <div class="products grid">
+        <div class="product__item">
+          <img src="./images/curology.svg" alt="">
+          <p class="product__item-description">Free sample small tote bag gucci fen...</p>
+          <span class="product__item-price">₦900 - ₦1,500</span>
+          <span class="product__item-minimum-quantity">MOQ 4 (pieces)</span>
+        </div>
+
+        <div class="product__item">
+          <img src="./images/sneakers.svg" alt="">
+          <p class="product__item-description">Free sample small tote bag gucci fen...</p>
+          <span class="product__item-price">₦900 - ₦1,500</span>
+          <span class="product__item-minimum-quantity">MOQ 4 (pieces)</span>
+        </div>
+
+        <div class="product__item">
+          <img src="./images/coke.svg" alt="">
+          <p class="product__item-description">Free sample small tote bag gucci fen...</p>
+          <span class="product__item-price">₦900 - ₦1,500</span>
+          <span class="product__item-minimum-quantity">MOQ 4 (pieces)</span>
+        </div>
+
+        <div class="product__item">
+          <img src="./images/coffee.svg" alt="">
+          <p class="product__item-description">Free sample small tote bag gucci fen...</p>
+          <span class="product__item-price">₦900 - ₦1,500</span>
+          <span class="product__item-minimum-quantity">MOQ 4 (pieces)</span>
+        </div>
+
+        <div class="product__item">
+          <img src="./images/paper-bag.svg" alt="">
+          <p class="product__item-description">Free sample small tote bag gucci fen...</p>
+          <span class="product__item-price">₦900 - ₦1,500</span>
+          <span class="product__item-minimum-quantity">MOQ 4 (pieces)</span>
+        </div>
+
+        <div class="product__item">
+          <img src="./images/box.svg" alt="">
+          <p class="product__item-description">Free sample small tote bag gucci fen...</p>
+          <span class="product__item-price">₦900 - ₦1,500</span>
+          <span class="product__item-minimum-quantity">MOQ 4 (pieces)</span>
+        </div>
+      </div>
+    </main>
+
+    <nav class="primary-nav">
+      <ul class="primary-nav__list grid">
+        <li class="primary-nav__list-item">
+          <img class="primary-nav__list-icon" src="./icons/home.svg" alt="">
+          Home
+        </li>
+        <li class="primary-nav__list-item primary-nav__list-item--buy">
+          <img class="primary-nav__list-icon" src="./icons/cart-2.svg" alt="">
+          Buy
+        </li>
+        <li class="primary-nav__list-item">
+          <img class="primary-nav__list-icon" src="./icons/price-tag.svg" alt="">
+          Deals
+        </li>
+        <li class="primary-nav__list-item">
+          <img class="primary-nav__list-icon" src="./icons/wallet.svg" alt="">
+          Wallet
+        </li>
+        <li class="primary-nav__list-item">
+          <img class="primary-nav__list-icon" src="./icons/menu.svg" alt="">
+          More
+        </li>
+      </ul>
+    </nav>
+  </div>
   <script src="script.js"></script>
 </body>
 </html>
